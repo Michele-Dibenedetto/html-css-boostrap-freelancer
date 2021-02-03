@@ -1,0 +1,126 @@
+/* da cancellare */
+/* [class*="col-"] {
+  border: 1px solid red;
+} */
+
+.image { /*da cancellare  */
+ width: 200px;
+ height: 200px;
+ border-radius: 50%;
+ background-color: blue;
+}
+
+/* generale */
+.marg_bott_40 {
+  margin-bottom: 40px;
+}
+.marg_bott_20 {
+  margin-bottom: 20px;
+}
+.marg_top_60 {
+  margin-top: 60px;
+}
+.marg_top_20 {
+  margin-top: 20px;
+}
+
+.star {
+  font-size: 2.5em;
+}
+
+.star.black {
+  color: black;
+}
+
+.portfolio,
+.contact,
+.about,
+.jumb,
+.box_footer {
+  text-align: center;
+}
+/* fine generale */
+
+
+/* inizio header */
+/* inizio top header */
+.box_header {
+  background-color: #23d191;
+  color: WHITE;
+}
+
+.top_header {
+  height: 80px;
+  background-color: #09244bd6;
+}
+.top_header h2 {
+  display: inline-block;
+}
+.top_header i {
+  float: right;
+  font-size: 3em;
+  border: 2px solid white;
+  padding: 5px;
+}
+/* fine top header */
+/* inizio jumb */
+/* fine jumb */
+/* fine header */
+/* inizio main */
+/* inizio portfolio */
+.container_image_portfolio {
+  padding: 10px;
+  background-color: red;
+}
+/* fine portfolio */
+/* inizio about */
+.about {
+  text-align: center;
+  background-color: #23d191;
+  color: white;
+}
+
+.about .text {
+  text-align: left;
+}
+.about a {
+  background-color: #23d191;
+  border: 1px solid white;
+  color: white;
+}
+/* fine about */
+/* inizio contact */
+.form {
+  height: 200px;
+  background-color: grey;
+}
+/* fine contact */
+/* fine main */
+/* inizio footer */
+/* inizio top footer */
+.box_footer {
+  color: white;
+}
+
+.top_footer {
+  background-color: #1c375feb;
+  padding-bottom: 40px;
+}
+.top_footer p span {
+  color: #23d191;
+}
+/* fine top footer */
+/* inizio bottom footer */
+.bottom_footer {
+  background-color: #2e5a9bfa;
+}
+.bottom_footer .row {
+  padding: 30px 0;
+}
+/* responsive smartphone */
+@media screen and (max-width:767px) {
+/* about */
+  .text {
+    margin-bottom: 20px;
+  }
+}
