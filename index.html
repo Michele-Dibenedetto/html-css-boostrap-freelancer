@@ -3,6 +3,8 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/master.css">
@@ -11,39 +13,41 @@
   <body>
     <header>
       <!-- inizio header -->
-      <div class="box_header">
-        <div class="container-fluid">
-          <!-- inizio top header -->
-              <div class="row top_header marg_bott_40">
-                <div class="col-lg-offset-1 col-lg-5 col-sm-offset-1 col-sm-5 col-xs-12">
-                  <h2>START BOOSTRAP</h2>
-                  <i class="fas fa-bars visible-xs-inline-block"></i>
-                </div>
-                <div class="col-lg-offset-1 col-lg-5 col-sm-offset-1 col-sm-5 hidden-xs">
-                  <ul>
-                    <li>PORTFOLIO</li>
-                    <li>ABOUT</li>
-                    <li>CONTACT</li>
-                  </ul>
-                </div>
-              </div>
-              <!-- fine top header -->
-              <!-- inizio jumb -->
-              <div class="jumb">
-                <img class="image"><!-- da sostituire con l'immagine --></img>
-                <h1>START BOOSTRAP</h1>
-                <span class="star">&#9733;</span> <!-- da sostituire -->
-                <p class="marg_bott_40">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
-              </div>
-              <!-- fine jumb -->
+      <!-- inizio top header -->
+      <div class="top_header">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-8 col-sm-5">
+              <h2>START BOOSTRAP</h2>
+            </div>
+            <div class="col-xs-4 col-sm-7">
+              <ul class="nav nav-pills  hidden-xs menu">
+                <li role="presentation"><a class="link_white" href="#">PORTFOLIO</a></li>
+                <li role="presentation"><a class="link_white" href="#">ABOUT</a></li>
+                <li role="presentation"><a class="link_white" href="#">CONTACT</a></li>
+              </ul>
+              <a class="btn link_white button_menu visible-xs" href="#">MENU<i class="fas fa-bars"></i></a>
             </div>
           </div>
-          <!-- fine header -->
+        </div>
+      </div>
+      <!-- fine top header -->
+      <!-- inizio jumb -->
+      <div class="jumb text-center">
+        <div class="contain_jumb padding_t_b_60">
+          <img src="img/avataaars.svg" alt="">
+          <h1>START BOOSTRAP</h1>
+          <span class="star">&#9733;</span>
+          <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
+        </div>
+      </div>
+      <!-- fine jumb -->
+      <!-- fine header -->
     </header>
     <main>
       <!--inizio portfolio -->
       <section>
-        <div class="portfolio marg_bott_40 marg_top_60">
+        <div class="portfolio padding_t_b_60 text-center">
           <div class="container">
             <!-- titolo sezione -->
             <div class="row">
@@ -52,36 +56,36 @@
                 <span class="star black">&#9733;</span>
               </div>
             </div>
-            <!-- prima riga -->
+            <!-- sezione immagini -->
             <div class="row">
-              <div class="col-lg-4 col-sm-6 col-xs-12 marg_bott_20">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="container_image_portfolio">
-                  <img class="image" src="" alt="">
+                  <img class="image_porfolio" src="img/cabin.png" alt="">
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12 marg_bott_20">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="container_image_portfolio">
-                  <img class="image" src="" alt="">
+                  <img class="image_porfolio" src="img/cake.png" alt="">
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12 marg_bott_20">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="container_image_portfolio">
-                  <img class="image" src="" alt="">
+                  <img class="image_porfolio" src="img/circus.png" alt="">
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12 marg_bott_20">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="container_image_portfolio">
-                  <img class="image" src="" alt="">
+                  <img class="image_porfolio" src="img/game.png" alt="">
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12 marg_bott_20">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="container_image_portfolio">
-                  <img class="image" src="" alt="">
+                  <img class="image_porfolio" src="img/safe.png" alt="">
                 </div>
               </div>
-              <div class="col-lg-4 col-sm-6 col-xs-12 marg_bott_20">
+              <div class="col-lg-4 col-sm-6 col-xs-12">
                 <div class="container_image_portfolio">
-                  <img class="image" src="" alt="">
+                  <img class="image_porfolio" src="img/submarine.png" alt="">
                 </div>
               </div>
             </div>
@@ -91,21 +95,23 @@
       <!-- fine porfolio -->
       <!-- inizio about -->
       <section>
-        <div class="about">
-          <div class="container-fluid">
-            <div class="container">
-              <div class="row marg_top_60">
-                <div class="col-xs-12 marg_bott_20">
-                  <h2>ABOUT</h2>
-                  <span class="star">&#9733;</span>
-                </div>
-                <div class="col-lg-offset-1 col-lg-5 col-sm-offset-1 col-sm-5 col-xs-12 text">
-                  <p>Freelancer is a free boostrap theme created by Start Boostrap. The download includes the complete source files including HTML, CSS and JavaScript as less as optional LESS stylesheets for easy customation.</p>
-                </div>
-                <div class="col-lg-5 col-sm-5 col-xs-12 text">
-                  <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist to share your projects, this tamplate is the perfect starting point.</p>
-                </div>
-                <a class="btn marg_top_20 marg_bott_40" href="#"><i class="fas fa-download"></i> Download</a>
+        <div class="about padding_t_b_60">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2>ABOUT</h2>
+                <span class="star">&#9733;</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-offset-1 col-lg-5 col-sm-offset-1 col-sm-5 col-xs-12 text-left marg_top_20">
+                <p>Freelancer is a free boostrap theme created by Start Boostrap. The download includes the complete source files including HTML, CSS and JavaScript as less as optional LESS stylesheets for easy customation.</p>
+              </div>
+              <div class="col-lg-5 col-sm-5 col-xs-12 text-left marg_top_20">
+                <p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist to share your projects, this tamplate is the perfect starting point.</p>
+              </div>
+              <div class="col-xs-12">
+                <a class="btn btn-lg link_white" href="#"><i class="fas fa-download"></i> Free Download</a>
               </div>
             </div>
           </div>
@@ -114,7 +120,7 @@
       <!-- fine about -->
       <!-- inizio contact -->
       <section>
-        <div class="contact marg_bott_40 marg_top_60">
+        <div class="contact padding_t_b_60 text-center">
           <div class="container">
             <div class="row">
               <div class="col-xs-12">
@@ -123,10 +129,22 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-xs-12">
-                <div class="form">   <!-- da sostituire -->
-
-                </div>
+              <div class="col-xs-offset-1 col-xs-10">
+                <form>
+                  <div class="form-group border_form">
+                    <input type="text" class="form-control form_input" placeholder="Name">
+                  </div>
+                  <div class="form-group border_form">
+                    <input type="email" class="form-control form_input" placeholder="Email address">
+                  </div>
+                  <div class="form-group border_form">
+                    <input type="text" class="form-control form_input" placeholder="Phone number">
+                  </div>
+                  <div class="form-group border_form">
+                    <textarea class="form-control form_input" rows="5" placeholder="Message"></textarea>
+                  </div>
+                    <a class="btn btn-lg link_white" href="#">Send</a>
+                </form>
               </div>
             </div>
           </div>
@@ -135,44 +153,40 @@
       <!-- fine contact -->
     </main>
     <footer>
-      <div class="box_footer container-fluid">
-        <!-- inizio top footer -->
-        <div class="top_footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-4 col-sm-4 col-xs-12">
-                <h3>LOCATION</h3>
-                <p>2215 John Daniel Drive Clark, MO 54243</p>
-              </div>
-              <div class="col-lg-4 col-sm-4 col-xs-12">
-                <h3>AROUND THE WEB</h3>
-                <ul>
-                  <li><i class="fab fa-facebook-f"></i></li>
-                  <li><i class="fab fa-google-plus-g"></i></li>
-                  <li><i class="fab fa-twitter"></i></li>
-                  <li><i class="fab fa-linkedin-in"></i></li>
-                </ul>
-              </div>
-              <div class="col-lg-4 col-sm-4 col-xs-12">
-                <h3>ABOUT FREELANCER</h3>
-                <p>Freelancer is a free to use, open source Boostrap theme create by <span>Start Boostrap</span>.</p>
-              </div>
+      <!-- inizio top footer -->
+      <div class="top_footer padding_t_b_60 text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+              <h3>LOCATION</h3>
+              <p class="marg_top_20">2215 John Daniel Drive Clark, MO 54243</p>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12 col_social">
+              <h3>AROUND THE WEB</h3>
+                <a class="link_white circle_icon_footer" href="#"><i class="icon_footer fab fa-facebook-f"></i></a>
+                <a class="link_white circle_icon_footer" href="#"><i class="icon_footer fab fa-google-plus-g"></i></a>
+                <a class="link_white circle_icon_footer" href="#"><i class="icon_footer fab fa-twitter"></i></a>
+                <a class="link_white circle_icon_footer" href="#"><i class="icon_footer fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 col-sm-4 col-xs-12">
+              <h3>ABOUT FREELANCER</h3>
+              <p class="marg_top_20">Freelancer is a free to use, open source Boostrap theme create by <span>Start Boostrap</span>.</p>
             </div>
           </div>
         </div>
-        <!-- fine top footer -->
-        <!-- inizio bottom footer -->
-        <div class="bottom_footer">
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <p>Copyright <i class="far fa-copyright"></i> Your Website 2019</p>
-              </div>
-
+      </div>
+      <!-- fine top footer -->
+      <!-- inizio bottom footer -->
+      <div class="bottom_footer text-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>Copyright <i class="far fa-copyright"></i> Your Website 2019</p>
             </div>
-          </div>
 
+          </div>
         </div>
+
       </div>
     </footer>
   </body>
